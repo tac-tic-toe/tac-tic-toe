@@ -27,7 +27,6 @@ kotlin {
     }
     js("web", IR) {
         browser()
-//        binaries.executable()
     }
     /*iosX64 {
         binaries {
@@ -37,13 +36,13 @@ kotlin {
         }
     }*/
     sourceSets {
-        val commonMain by getting {
+        named("commonMain") {
             dependencies {
                 api(compose.runtime)
                 api(compose.web.widgets)
             }
         }
-        val commonTest by getting {
+        named("commonTest") {
             dependencies {
                 implementation(kotlin("test"))
             }
@@ -59,33 +58,33 @@ kotlin {
         }
         val jvmTest by creating
 
-        val androidMain by getting {
+        named("androidMain") {
             dependsOn(jvmMain)
             dependencies {
                 api("androidx.appcompat:appcompat:1.3.0")
                 api("androidx.core:core-ktx:1.6.0")
             }
         }
-        val androidTest by getting {
+        named("androidTest") {
             dependsOn(jvmTest)
             dependencies {
                 implementation("junit:junit:4.13")
             }
         }
-        val desktopMain by getting {
+        named("desktopMain") {
             dependsOn(jvmMain)
         }
-        val desktopTest by getting {
+        named("desktopTest") {
             dependsOn(jvmTest)
         }
-        val webMain by getting {
+        named("webMain") {
             dependencies {
                 api(compose.web.core)
             }
         }
-        val webTest by getting
-        /*val iosX64Main by getting
-        val iosX64Test by getting*/
+        named("webTest")
+        /*named("iosX64Main")
+        named("iosX64Test")*/
     }
 }
 
