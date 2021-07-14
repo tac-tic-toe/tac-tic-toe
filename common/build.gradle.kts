@@ -36,13 +36,13 @@ kotlin {
         }
     }*/
     sourceSets {
-        named("commonMain") {
+        val commonMain by getting {
             dependencies {
                 api(compose.runtime)
                 api(compose.web.widgets)
             }
         }
-        named("commonTest") {
+        val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
             }
@@ -58,33 +58,33 @@ kotlin {
         }
         val jvmTest by creating
 
-        named("androidMain") {
+        val androidMain by getting {
             dependsOn(jvmMain)
             dependencies {
                 api("androidx.appcompat:appcompat:1.3.0")
                 api("androidx.core:core-ktx:1.6.0")
             }
         }
-        named("androidTest") {
+        val androidTest by getting {
             dependsOn(jvmTest)
             dependencies {
                 implementation("junit:junit:4.13")
             }
         }
-        named("desktopMain") {
+        val desktopMain by getting {
             dependsOn(jvmMain)
         }
-        named("desktopTest") {
+        val desktopTest by getting {
             dependsOn(jvmTest)
         }
-        named("webMain") {
+        val webMain by getting {
             dependencies {
                 api(compose.web.core)
             }
         }
-        named("webTest")
-        /*named("iosX64Main")
-        named("iosX64Test")*/
+        val webTest by getting
+        /*val iosX64Main by getting
+        val iosX64Test by getting*/
     }
 }
 
