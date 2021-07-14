@@ -2,6 +2,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.Composable
+import com.toleno.common.App
 import org.jetbrains.compose.web.attributes.*
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
@@ -11,7 +12,8 @@ fun main() {
 	var count: Int by mutableStateOf(0)
 
 	renderComposable(rootElementId = "root") {
-		Div({ style { padding(25.px) } }) {
+		App()
+		/*Div({ style { padding(25.px) } }) {
 			Button(attrs = {
 				onClick { count -= 1 }
 			}) {
@@ -27,6 +29,6 @@ fun main() {
 			}) {
 				Text("+")
 			}
-		}
+		}*/
 	}
 }

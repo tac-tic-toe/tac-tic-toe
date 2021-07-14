@@ -1,5 +1,5 @@
 plugins {
-	kotlin("js")
+	kotlin("multiplatform")
 	id("org.jetbrains.compose") version "0.5.0-build245"
 }
 
@@ -11,17 +11,24 @@ repositories {
 	maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
 }
 
-dependencies {
-//	implementation(project(":common"))
-	implementation(compose.web.core)
-//	implementation(compose.web.widgets)
-	implementation(compose.runtime)
-	testImplementation(kotlin("test"))
-}
-
 kotlin {
 	js(IR) {
 		browser()
 		binaries.executable()
+	}
+	sourceSets {
+		named("jsMain") {
+			dependencies {
+				implementation(project(":common"))
+				implementation(compose.web.core)
+				implementation(compose.web.widgets)
+				implementation(compose.runtime)
+			}
+		}
+		named("jsTest") {
+			dependencies {
+				implementation(kotlin("test"))
+			}
+		}
 	}
 }
