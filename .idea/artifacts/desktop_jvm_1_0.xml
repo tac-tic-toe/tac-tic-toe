@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="desktop-jvm-1.0">
+    <output-path>C:\Users\leono\IdeaProjects\tac-tic-toe\tac-tic-toe\desktop\build\libs</output-path>
+    <root id="archive" name="desktop-jvm-1.0.jar">
+      <element id="module-output" name="tac-tic-toe.desktop.jvmMain" />
+    </root>
+  </artifact>
+</component>
