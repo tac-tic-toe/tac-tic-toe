@@ -2,8 +2,8 @@ import org.jetbrains.compose.compose
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
-    kotlin("multiplatform")
-    id("org.jetbrains.compose") version "0.5.0-build245"
+	kotlin("multiplatform")
+	id("org.jetbrains.compose")
 }
 
 group = "com.toleno"
