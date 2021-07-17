@@ -2,10 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="15">
-      <module name="tac-tic-toe.common.client.commonMain" target="11" />
-      <module name="tac-tic-toe.common.client.commonTest" target="11" />
-      <module name="tac-tic-toe.common.client.desktopMain" target="11" />
-      <module name="tac-tic-toe.common.client.desktopTest" target="11" />
+      <module name="tac-tic-toe.common.commonMain" target="1.8" />
+      <module name="tac-tic-toe.common.commonTest" target="1.8" />
+      <module name="tac-tic-toe.common.desktopMain" target="1.8" />
+      <module name="tac-tic-toe.common.desktopTest" target="1.8" />
+      <module name="tac-tic-toe.common.jvmMain" target="1.8" />
+      <module name="tac-tic-toe.common.jvmTest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

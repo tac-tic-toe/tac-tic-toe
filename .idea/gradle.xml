@@ -10,7 +10,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/android" />
+            <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/common/all" />
+            <option value="$PROJECT_DIR$/common/client" />
             <option value="$PROJECT_DIR$/desktop" />
             <option value="$PROJECT_DIR$/server" />
             <option value="$PROJECT_DIR$/server/database" />

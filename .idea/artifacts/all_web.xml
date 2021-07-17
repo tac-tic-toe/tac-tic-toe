@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="all-web">
+    <output-path>C:\Users\leono\IdeaProjects\tac-tic-toe\tac-tic-toe\common\all\build\libs</output-path>
+    <root id="archive" name="all-web.jar">
+      <element id="module-output" name="tac-tic-toe.common.all.webMain" />
+    </root>
+  </artifact>
+</component>
