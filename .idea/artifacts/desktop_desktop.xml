@@ -1,6 +1,8 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="desktop-desktop">
     <output-path>C:\Users\leono\IdeaProjects\tac-tic-toe\tac-tic-toe\desktop\build\libs</output-path>
-    <root id="archive" name="desktop-desktop.jar" />
+    <root id="archive" name="desktop-desktop.jar">
+      <element id="module-output" name="tac-tic-toe.desktop.desktopMain" />
+    </root>
   </artifact>
 </component>

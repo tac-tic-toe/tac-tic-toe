@@ -2,9 +2,7 @@ import org.jetbrains.compose.compose
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
-	id("base")
-	kotlin("multiplatform")
-	id("org.jetbrains.compose")
+	id("desktop")
 }
 
 repositories {
@@ -13,14 +11,6 @@ repositories {
 }
 
 kotlin {
-	jvm("desktop") {
-		compilations.all {
-			kotlinOptions.jvmTarget = "1.8"
-		}
-		testRuns["test"].executionTask.configure {
-			useJUnitPlatform()
-		}
-	}
 	sourceSets {
 		named("desktopMain") {
 			dependencies {

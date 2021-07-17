@@ -1,31 +1,17 @@
 import org.jetbrains.compose.compose
 
 plugins {
-	id("base")
-	kotlin("multiplatform")
-	id("org.jetbrains.compose")
+	id("desktop")
+	id("web")
 	id("com.android.library")
 }
 
 repositories {
 	google()
-	mavenCentral()
-	maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
 }
 
 kotlin {
 	android()
-	jvm("desktop") {
-		compilations.all {
-			kotlinOptions.jvmTarget = "1.8"
-		}
-		testRuns["test"].executionTask.configure {
-			useJUnitPlatform()
-		}
-	}
-	js("web", IR) {
-		browser()
-	}
 	/*iosX64 {
 		binaries {
 			framework {
