@@ -14,6 +14,7 @@ repositories {
 }
 
 dependencies {
+    implementation(project(":common:all"))
     implementation(project(":server:database"))
     testImplementation(kotlin("test"))
 }
