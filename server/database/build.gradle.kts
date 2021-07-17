@@ -1,11 +1,9 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
+    id("base")
     kotlin("jvm")
 }
-
-group = "com.toleno"
-version = "1.0"
 
 dependencies {
     testImplementation(kotlin("test"))

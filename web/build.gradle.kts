@@ -1,10 +1,8 @@
 plugins {
+	id("base")
 	kotlin("multiplatform")
 	id("org.jetbrains.compose")
 }
-
-group = "com.toleno"
-version = "1.0"
 
 repositories {
 	mavenCentral()

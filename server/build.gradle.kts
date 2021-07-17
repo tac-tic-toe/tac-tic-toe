@@ -1,12 +1,10 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
+    id("base")
     kotlin("jvm")
     id("org.jetbrains.compose")
 }
-
-group = "com.toleno"
-version = "1.0"
 
 repositories {
     mavenCentral()

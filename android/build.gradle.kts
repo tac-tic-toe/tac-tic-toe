@@ -1,11 +1,9 @@
 plugins {
+    id("base")
     id("org.jetbrains.compose")
     id("com.android.application")
     kotlin("android")
 }
-
-group = "com.toleno"
-version = "1.0"
 
 repositories {
     google()

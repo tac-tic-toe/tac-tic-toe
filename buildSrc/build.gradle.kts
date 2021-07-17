@@ -1,4 +1,5 @@
 plugins {
+	id("base")
 	`kotlin-dsl`
 }
 
@@ -9,9 +10,6 @@ repositories {
 	maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
 	gradlePluginPortal()
 }
-
-group = "com.toleno"
-version = "1.0"
 
 dependencies {
 	gradlePlugin(Versions.JetBrains.Compose)
