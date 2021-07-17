@@ -1,2 +1,2 @@
-group = "com.toleno"
-version = "1.0"
+group = Group.id
+version = Project.Version.name

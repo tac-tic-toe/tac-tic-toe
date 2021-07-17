@@ -1,5 +1,3 @@
-// Sealed interfaces don't work here, even with languageVersion set :(
-
 object Versions {
 	object JetBrains {
 		object Kotlin : GradlePlugin {
@@ -14,8 +12,8 @@ object Versions {
 
 	object Android {
 		object Version {
-			const val code = 1
-			const val name = "1.0"
+			const val code = Project.Version.code
+			const val name = Project.Version.name
 		}
 
 		object Sdk {
