@@ -13,7 +13,7 @@ repositories {
 }
 
 kotlin {
-	jvm {
+	jvm("desktop") {
 		compilations.all {
 			kotlinOptions.jvmTarget = "1.8"
 		}
@@ -22,13 +22,13 @@ kotlin {
 		}
 	}
 	sourceSets {
-		named("jvmMain") {
+		named("desktopMain") {
 			dependencies {
 				implementation(project(":common:client"))
 				implementation(compose.desktop.currentOs)
 			}
 		}
-		named("jvmTest") {
+		named("desktopTest") {
 			dependencies {
 				implementation(kotlin("test"))
 			}
