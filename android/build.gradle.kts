@@ -19,13 +19,13 @@ dependencies {
 }
 
 android {
-    compileSdkVersion(30)
+    compileSdkVersion(Versions.Android.Sdk.compile)
     defaultConfig {
         applicationId = "com.toleno.android"
-        minSdkVersion(24)
-        targetSdkVersion(30)
-        versionCode = 1
-        versionName = "1.0"
+        minSdkVersion(Versions.Android.Sdk.min)
+        targetSdkVersion(Versions.Android.Sdk.target)
+        versionCode = Versions.Android.Version.code
+        versionName = Versions.Android.Version.name
     }
     buildTypes {
         getByName("release") {
