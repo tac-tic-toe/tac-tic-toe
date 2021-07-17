@@ -10,12 +10,12 @@ repositories {
 }
 
 kotlin {
-	js(IR) {
+	js("web", IR) {
 		browser()
 		binaries.executable()
 	}
 	sourceSets {
-		named("jsMain") {
+		named("webMain") {
 			dependencies {
 				implementation(project(":common:client"))
 				implementation(compose.web.core)
@@ -23,7 +23,7 @@ kotlin {
 				implementation(compose.runtime)
 			}
 		}
-		named("jsTest") {
+		named("webTest") {
 			dependencies {
 				implementation(kotlin("test"))
 			}
