@@ -19,7 +19,7 @@ kotlin {
 	sourceSets {
 		named("jsMain") {
 			dependencies {
-				implementation(project(":common"))
+				implementation(project(":common:client"))
 				implementation(compose.web.core)
 				implementation(compose.web.widgets)
 				implementation(compose.runtime)
