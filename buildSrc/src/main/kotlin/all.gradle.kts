@@ -1,5 +1,3 @@
-package common
-
 import Versions
 import gradle.kotlin.dsl.accessors._7a28de8fd55aaf24a75c93b47577aa9d.android
 import gradle.kotlin.dsl.accessors._7a28de8fd55aaf24a75c93b47577aa9d.kotlin
